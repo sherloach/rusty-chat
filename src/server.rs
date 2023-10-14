@@ -108,4 +108,3 @@ impl Server {
         info!("Client {} disconnected", client.id);
     }
 }
-
