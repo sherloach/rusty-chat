@@ -4,25 +4,24 @@ import UserList from "./UserList";
 
 const Feed = () => {
   return (
-    <div className="w-full h-full">
+    <div className="flex flex-col h-full">
       <div className="border-b">Feed</div>
 
-      <div className="flex w-full h-full border-b">
-        {/* Sidebar */}
-        <div className="w-40 p-5 border-r">
-          <div className="mb-3">Users</div>
-          <UserList />
+      <div className="flex w-full flex-1 flex-col border-b">
+        <div className="flex-1 flex">
+          <div className="w-40 p-5 border-r">
+            <div className="mb-3">Users</div>
+            <UserList />
+          </div>
+
+          <div className="flex flex-1 p-5 flex-col-reverse gap-6">
+            <MessageList />
+          </div>
         </div>
 
-        {/* Message List */}
-        <div className="flex flex-1 p-5 flex-col-reverse gap-6">
-          <MessageList />
+        <div className="p-2">
+          <InputForm />
         </div>
-      </div>
-
-      {/* Input Form */}
-      <div className="p-2">
-        <InputForm />
       </div>
     </div>
   );

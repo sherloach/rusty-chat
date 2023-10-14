@@ -18,7 +18,7 @@ const UserList: React.FC<IUserList> = () => {
             ></path>
           </svg>
         </div>
-        <span className="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+        <span className="top-0 left-7 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
       </div>
       <div className="font-medium text-sm">Hayden</div>
     </div>
